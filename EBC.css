@@ -1,0 +1,416 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(235, 245, 247, 0.749);
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+.slide1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgba(67, 160, 241, 0.872);
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://png.pngtree.com/background/20230611/original/pngtree-the-top-of-the-everest-mountain-is-surrounded-by-clouds-picture-image_3171363.jpg");
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    position: relative;
+    }
+
+ .panel1{
+    height: 650px;
+    width: 800px;
+    border-radius: 40px;
+    margin-top: 30px;
+    background-color: rgba(235, 245, 247, 0.749);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px;
+
+ }
+ .panel1 h1{
+    position: relative;
+    font-size: 40px;
+    margin-left: 200px;
+    color: black;
+    margin-top: 100px;
+    
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px; /* Adjusted width */
+    height: auto;
+    margin: 10px -5px; /* Adjusted margin */
+}
+.logo-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.logo-item {
+    text-align: center;
+}
+
+.logo-item img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.logo-details {
+    padding-top: 10px;
+}
+
+.logo-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+    margin-top: 0px;
+}
+
+.logo-details p {
+    font-size: 14px;
+    color: #100f0f;
+    margin-top: 2px;
+}
+.logo-item1{
+    margin-top: 20px;
+}
+.logo-item1 h3{
+margin-top: 26px;
+}
+.logo-item2{
+    margin-top: 20px;
+}
+.logo-item2 h3{
+margin-top: 20px;
+}
+
+/*----------------------Second Slide-----------------------*/
+
+.slide2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 3%, 29%, 0.834);
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    align-items: center;
+    position: relative;
+    background-image: url("slide2img d.png");
+    }
+
+    .button{
+    
+        color: 565251; /* Change text color to white */
+        background-color: #407c8bd3; /* Set the background color to your desired color */
+        margin: 0;
+        height: 100px;
+        font-size: 24px;
+        display: flex;
+        border:none;
+        cursor: pointer;
+        width: 100%;
+        
+        padding: 0px;
+        
+        
+    }
+
+    
+    .button1 img,
+    .button2 img,
+    .button3 img,
+    .button4 img {
+        width: 50px; /* Adjust the width of the logos as needed */
+        height: auto; /* Maintain aspect ratio */
+        
+    }
+    .button1,
+    .button2,
+    .button3,
+    .button4{
+        width: 100%;
+        height: 100%;
+    }
+    #trekButton{
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:transparent;
+        width: 100%;
+        height: 100%;
+        border:none;
+    }
+    #trekButton:hover,
+    #includeExcludeButton:hover,#shopButton:hover,
+    #mapButton:hover{
+      border: 2px solid rgba(43, 108, 126, 0.894);
+    }
+     
+    #includeExcludeButton{
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:transparent;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    #mapButton{
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        border: none;
+
+
+    }
+    #shopButton{
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        border: none;
+
+
+    }
+    .button1 span,
+    .button2 span,
+    .button3 span,
+    .button4 span{
+        font-size: 12px; /* Adjust the font size of the text */
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+
+    .panel {
+        display: none; 
+        background-color: rgba(247, 250, 250, 0.771);
+        height: 600px;
+        width: 900px;
+        position: relative;
+        margin-top: 70px;
+        border-radius: 40px;
+
+        
+    }
+
+    #trekPanel p{
+        border-radius: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+
+    }
+    
+    .panel onepan{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .panel twopan{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+   
+    #includeExcludePanel p{
+        border-radius: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+    }
+    .panel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 30px;
+    }
+    .pan1 h1{
+        color: green;
+
+    }
+    .pan2 h1{
+        color: red;
+    }
+    
+    .pan1 p{
+        font-size: 14px; /* Adjust the font size as needed */
+        color: green;
+        
+    }
+    .pan2 p {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: red;
+}
+
+    #mapPanel p{
+        border-radius: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 50px;
+
+    }
+
+    
+    #mapPanel img {
+       width: 70%; /* Set image width to 100% */
+    
+        
+        
+
+    }
+    .content{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content p{
+        font-size: 14px;
+
+    }
+
+    
+      
+
+/* responsive side */
+
+@media only screen and (max-width: 768px) {
+    .slide1 {
+        width: 100%;
+        height: auto; /* Change from fixed height to auto */
+        display: flex;
+        flex-direction: column;
+        color: rgba(67, 160, 241, 0.872);
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://png.pngtree.com/background/20230611/original/pngtree-the-top-of-the-everest-mountain-is-surrounded-by-clouds-picture-image_3171363.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 20px; /* Adjust padding */
+    }
+    
+    .panel1 {
+        width: 90%; /* Adjusted width */
+        max-width: 800px; /* Added max-width */
+        border-radius: 40px;
+        margin-top: 30px;
+        background-color: rgba(235, 245, 247, 0.749);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 30px;
+    }
+    
+    .panel1 h1 {
+        font-size: 40px;
+        color: black;
+        margin-top: 20px; /* Adjusted margin */
+        text-align: center; /* Centered text */
+    }
+    
+    .logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px; /* Adjusted margin */
+    }
+    
+    .logo-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Adjusted gap */
+        flex-wrap: wrap; /* Added flex-wrap to wrap items */
+    }
+    
+    .logo-item {
+        text-align: center;
+        flex: 1 1 200px; /* Added flex property */
+        max-width: 200px; /* Added max-width */
+    }
+    
+    .logo-item img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px; /* Adjusted margin */
+    }
+    
+    .logo-details h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: black;
+        margin-top: 0px;
+        text-align: center; /* Centered text */
+    }
+    
+    .logo-details p {
+        font-size: 14px;
+        color: #100f0f;
+        margin-top: 2px;
+        text-align: center; /* Centered text */
+    }
+    
+
+
+
+}
+
