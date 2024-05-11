@@ -9,23 +9,23 @@
 <body>
     <div class="container">
         <header>Registration Form</header>
-        <form action="#" class="form">
+        <form action="./admin/registration.php" method="POST" class="form">
             <div class="input-box">
                 <label>Full Name</label>
-                <input type ="text" placeholder="Enter full name" required/>
+                <input type ="text" name="fullname" placeholder="Enter full name" required/>
             </div>
             <div class="input-box">
                 <label>Email Address</label>
-                <input type ="text" placeholder="Enter emali address"required/>
+                <input type ="text" name="email" placeholder="Enter emali address"required/>
             </div>
             <div class="column">
                 <div class="input-box">
                     <label> Phone Number</label>
-                    <input type ="number" placeholder="Enter phone number" required/>
+                    <input type ="number" name="number" placeholder="Enter phone number" required/>
                 </div>
                 <div class="input-box">
                     <label>Birth Date</label>
-                    <input type ="date" placeholder="Enter birth date" required/>
+                    <input type ="date" name="birthdate"  placeholder="Enter birth date" required/>
                 </div>
             </div>
             <div class="gender-box">
@@ -47,12 +47,12 @@
             </div>
             <div class="input-box address">
                 <label>Address</label>
-                <input type ="text" placeholder="Enter street address" required/>
-                <input type ="text" placeholder="Enter street address line 2" required/>
+                <input type ="text" name="street-address" placeholder="Enter street address" required/>
+                <input type ="text" name="street-address-2" placeholder="Enter street address line 2" required/>
 
                 <div class="column">
                     <div class="select-box">
-                        <select>
+                        <select name="country">
                             <option hidden>Country</option>
                             <option>America</option>
                             <option>Japan</option>
@@ -63,18 +63,18 @@
                         </select>
 
                     </div>
-                    <input type ="text" placeholder="Enter your city" required/>
+                    <input type ="text" name="city" placeholder="Enter your city" required/>
                 </div>
 
                 <div class="column">
-                    <input type ="text" placeholder="Enter your region" required/>
-                    <input type ="number" placeholder="Enter postal code" required/>
+                    <input type ="text" name="region" placeholder="Enter your region" required/>
+                    <input type ="number" name="postal-code" placeholder="Enter postal code" required/>
             
                 </div>
                 
             </div>
             
-            <button>Submit</button>
+            <input type="submit" value="Submit"/>
         </form>
     </div>
 </body>
