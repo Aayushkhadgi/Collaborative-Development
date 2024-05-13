@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<!-- <style>
+  .logout{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    position: absolute;
+   top: 10px;
+   right: 6%;
+
+   cursor: pointer;
+}
+.Logout_icon{
+    font-size: 1.3em;
+}
+</style> -->
+<body>
+  <header>
+    <img src="http://localhost/Infinity/Images/infinity_logo.png"  alt="Infinite logo">
+    <h2>Admin </h2>
+    <ion-icon name="sunny-outline" class="light"></ion-icon>
+  </div>
+  <div class="logout" id="logout">
+   <span> Logout</span> <tr><ion-icon name="log-out-outline" class="Logout_icon"></ion-icon>
+  </div>
+  </header>
+  <div class="container">
+ 
+   <h3> Edit Navigation</h3>
+   <form action="datapush.php" method="Post">
+    
+    <div class="row">
+      <div class="col">
+        <input type="text" name="box1" class="form-control" placeholder="NavBar1 Name" id="1" required>
+      </div>
+      <div class="col">
+        <input type="text"   name="box2" class="form-control" placeholder="NavBar2 Name" id="2" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type="text"  name="box3" class="form-control" placeholder="NavBar3 Name" id="3" required >
+      </div>
+      <div class="col">
+        <input type="text" name="box4" class="form-control" placeholder="NavBar4 Name" id="4" required>
+      </div> 
+     </div>
+     <div class="row">
+      <div class="col">
+        <input type="text" name="box5" class="form-control" placeholder="NavBar5 Name" id="5" required>
+      </div>
+      <div class="col">
+        <input type="text"  name="box6" class="form-control" placeholder="NavBar6  Name" id="6" >
+      </div>
+
+    </div>
+ <br>
+     <input class="btn btn-primary" type="submit" id="SubmitBtn" value="Submit">
+
+   </form>
+
+  </div>
+   
+  <!-- <div class="categories_section">
+    <h2>Categories Section</h2>
+
+    <form action="">
+      <label for="category">Select  Category:</label>
+      <select  name="Category" id="Category" placeholder="Select">
+        <option name="Men">Men</option>
+        <option name="Women">Women</option>
+        <option name="Unisex">Unisex</option>
+        </select>
+      
+      
+
+    </form>
+    
+  </div> -->
+
+  <div class="categories-section">
+    <h2>Categories Section</h2>
+    <form action="categorydatapush.php"
+     method="post"
+     enctype="multipart/form-data">
+ 
+        <label for="category">Select Category:</label>
+        <select name="Category" id="Category">
+            <option value="" disabled selected>Select</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Unisex">Unisex</option>
+        </select>
+
+        <!-- Sub-Category Selection -->
+        <label for="sub-category">Select Sub-Category:</label>
+        <select name="Sub-Category" id="Sub-Category">
+            <option value="" disabled selected aria-required="true">Select</option>
+        </select>
+       
+        
+        <div id="sub-category-validation-message" class="validation-message"></div>
+        <!-- Product Details -->
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Enter product name">
+        <div id="name-validation-message" class="validation-message"></div>
+
+        <label for="product-image">Product Image:</label>
+    <input type="file" id="product-image" name="product-image" accept="image/png,image/jpeg">
+    <span id="file-error" style="color: red;"></span> <!-- Error message placeholder -->
+    <br>
+
+        <label for="product-description">Product Description:</label>
+        <textarea id="product-description" name="product-description" placeholder="Enter product description"></textarea>
+        <div id="description-validation-message" class="validation-message"></div>
+
+        <label for="product-price">Product Price:</label>
+        <input type="number" id="product-price" name="product-price" placeholder="Enter product price" min="0" max="99999.999" step="0.001">
+
+
+      
+
+        <label for="product-size">Product Size:</label>
+        <div class="sizes">
+          <div class="s1">
+           
+            <label for="size_xxl">XXL</label>
+            <input type="number" class="product_size"    name="size_xxl" id='size_xxl' value=0 min='0' max="99">
+            
+      </div>
+
+      <div class="s2">
+        <label for="size_xl">XL</label>
+        <input type="number" class="product_size"   name="size_xl"  id='size_xl' min='0' value=0 max="99">
+        
+      </div>
+
+      <div class="s3">
+        <label for="size_m">M</label>
+        <input type="number"class="product_size"    name="size_m" id='size_m'   value=0 min='0' max="99">
+        
+      </div>
+
+      <div class="s4">
+        <label for="size_s">S</label>
+        <input type="number" class="product_size"  name="size_s"  id='size_s' value=0 min='0' max="99" >
+        
+      </div>
+        
+      </div>
+       
+      <label for="totalstock">Total Stock:</label>
+      <p   id="totalstock" name="product-stock" ></p>
+        <!-- Submit Button -->
+        
+        <button type="submit" class="btn btn-primary" id="addBtn">Add Product</button>
+    </form>
+</div>
+</body>
+<script  src="app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

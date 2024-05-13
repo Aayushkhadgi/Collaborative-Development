@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Fredoka:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container h3{
+    letter-spacing: 6px;
+}
+.container form .row{
+margin-top: 20px;
+}
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form input{
+     margin-top: 20px;
+}
+header h2{
+    text-align: center;
+    letter-spacing: 6px;
+  
+}
+header img{
+    width: 100px;
+    position: absolute;
+    
+    left: 0;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom:1px solid rgb(183, 69, 211);
+    background-color: white;
+   
+    
+    
+   
+}
+
+.darkmode{
+    background-color: #3b3939;
+    color: white;
+}
+.navbar_active{
+    background-color: #3b3939;
+    color: white;
+    
+}
+.light{
+    font-size: 2.1em;
+    font-weight: bold;
+    position: absolute;
+    top:3px;
+    right:4px;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    position: absolute;
+   top: 10px;
+   right: 8%;
+
+   cursor: pointer;
+}
+.Logout_icon{
+    font-size: 1.3em;
+}
+@media only screen and (max-width: 800px) {
+    .logout{
+        gap: 6px;
+        position: absolute;
+       top: 10px;
+       right: 14%;
+       font-size: 1em;
+       font-weight: bold;
+       cursor: pointer;
+    }
+    .logout span{
+        display: none;
+    }
+    .Logout_icon{
+        font-size: 1.5em;
+    }
+    header h2{
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 1.4em;
+        font-weight: 900;
+      
+    }
+    header img{
+        width: 70px;
+        position: absolute;
+        
+        left: 0;
+    }
+    form{
+        width: 120%;
+        
+    }
+    .container form input{
+  font-size: 0.8em;
+    }
+    .container{
+        height:auto;
+
+        padding:30% 20%;
+    }
+    
+  .row{
+    width: 100%;
+  }
+   .row .col .form-control{
+    width: 100%;
+   }
+   .categories-section{
+    width: 100%;
+   }
+   .categories-section form{
+    width: 100%;
+   }
+   .categories-section form label{
+    margin-bottom: 10px;
+    margin-top: 10px;
+   }
+
+   form .sizes{
+    display: flex; 
+    justify-content: center;
+     gap: 10px;
+
+}
+
+  }
+.categories-section{
+     height: auto;
+     width: 100%;
+
+     padding: 40px 20px;
+}
+.categories-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.categories-section form select,input,textarea{
+   
+    width: 60%;
+    padding: 10px;
+ 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#addBtn{
+    width: 60%;
+
+    border: none;
+    cursor: pointer;
+}
+#submitBtn{
+    width: 40%;
+    border: none;
+    cursor: pointer;
+}
+.sizes{
+    display: flex; 
+    justify-content: center;
+     gap: 40px;
+
+}
+.sizes input{
+    width: 70px;
+    padding-top: 5px;
+}
+.sizes{
+ margin-bottom: 20px;
+}
+
+.sizes input[type=number]::-webkit-inner-spin-button{
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+} 
+    
+
+#totalstock{
+    background:transparent;
+    border: 0px solid;
+}

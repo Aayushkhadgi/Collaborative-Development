@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package</title>
+    <style>
+        /* Common styles */
+        .panelX, .panelY, .panelZ {
+            width: 100%;
+            max-width: 350px; /* Adjusted max-width for panels */
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .panalA {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .panelX, .panelY, .panelZ {
+                max-width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .panel-content {
+                overflow-y: auto; /* Add overflow to handle content overflow */
+                max-height: 300px; /* Adjust the max-height as needed */
+                padding-right: 10px; /* Add some padding to prevent content from being hidden by the scrollbar */
+            }
+        }
+
+        /*--------------Slide 3--------------*/
+        .slide3{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("https://png.pngtree.com/background/20230611/original/pngtree-the-top-of-the-everest-mountain-is-surrounded-by-clouds-picture-image_3171363.jpg");
+            background-size: cover; /* Ensures the background image covers the entire element */
+            background-position: center; /* Centers the background image */
+            position: relative;
+        }
+
+        .panalA {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; /* Ensure panels are spaced evenly */
+            gap: 40px;
+        }
+
+        .panelX, .panelY, .panelZ {
+            height: auto; /* Change height to auto */
+            border-radius: 40px;
+            background-color: rgba(75, 212, 240, 0.837);
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 90px;
+            border-bottom-left-radius: 90px;
+            transition: transform 0.3s; /* Added transition for scale effect */
+        }
+
+        .panelX:hover, .panelY:hover, .panelZ:hover {
+            transform: scale(1.05); /* Enlarge the panel by 5% on hover */
+        }
+
+        .panelX button, .panelY button, .panelZ button {
+            height: 20px; /* Adjust the height as needed */
+            padding: 2px 10px; /* Adjust the padding to center the text vertically */
+            font-size: 16px; /* Adjust the font size as needed */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            color: rgb(144, 39, 39); /* Set the initial text color */
+            border: none; /* Remove the border */
+            cursor: pointer; /* Change the cursor to pointer */
+            transition: background-color 0.3s; 
+        }
+
+        .panelX button:hover, .panelY button:hover, .panelZ button:hover {
+            background-color: rgba(42, 98, 239, 0.894); /* Change background color on hover */
+            color: #fff; /* Change text color on hover */
+        }
+
+        .panelX .panel-button, .panelY .panel-button, .panelZ .panel-button {
+            position: absolute;
+            bottom: 20px; /* Adjust the distance from the bottom as needed */
+            left: 50%; /* Position the button in the center horizontally */
+            transform: translateX(-50%); /* Center the button horizontally */
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        .panelX .panel-button:hover, .panelY .panel-button:hover, .panelZ .panel-button:hover {
+            background-color: #ddd; /* Change button background color on hover */
+        }
+
+        .panelX h1, .panelY h1, .panelZ h1 {
+            font-style:normal ;
+            font-size: 40px;
+        }
+
+        .panelX h2, .panelY h2, .panelZ h2 {
+            font-style:normal ;
+            font-size: 50px;
+        }
+
+        .panelX p, .panelY p, .panelZ p {
+            font-style:normal ;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide3">
+        <div class="panalA">
+            <div class="panelX">
+                <h1>Basic</h1>
+                <p> * Accommodation: Basic lodging options such as tea houses or guesthouses along the trekking route.<br>
+                    * Meals: Standard meals included, typically breakfast, lunch, and dinner.<br>
+                    * Guide and Porter: Local guide to lead the trek and porter support for carrying luggage.<br>
+                </p>
+                <h2>999$</h2>
+                <p> * Permits and Fees: Necessary permits and entry fees to national parks or conservation areas.<br>
+                    * Transportation: Basic transportation arrangements to and from the trekking starting point.<br>
+                    * Safety Gear: Basic safety equipment and first aid supplies<br>
+                    * <br>
+                    * <br>
+                    * <br></p>
+                <button class="panel-button">Purchase</button>
+            </div>
+            <div class="panelY">
+                <h1>Advanced</h1>
+                <p> * Accommodation: Upgraded accommodation options, including better-equipped lodges or standard hotels at certain points of the trek.<br>
+                    * Meals: More variety in meals, including additional snacks and beverages.<br>
+                    * Guide and Porter: Experienced guide with more extensive knowledge of the region and additional porter support for comfort.<br>
+                </p>
+                <h2>1999$</h2>
+                <p> * Permits and Fees: Expedited permit processing and handling of necessary paperwork.<br>
+                    * Transportation: More comfortable transportation arrangements, possibly including private transfers.<br>
+                    * Gear Rental: Provision of trekking gear like trekking poles, sleeping bags, or tents.<br>
+                    * Additional Activities: Opportunities for side trips or additional activities along the trekking route.<br>
+                    * Travel Insurance: Basic travel insurance coverage for the duration of the trek
+                    * <br></p>
+                <button class="panel-button">Purchase</button>
+            </div>
+            <div class="panelZ">
+                <h1>Premium</h1>
+                <p> * Accommodation: Premium accommodation options, such as luxury lodges or boutique hotels with better amenities.<br>
+                    * Meals: High-quality meals with more extensive menu options, including special dietary preferences catered for.<br>
+                    * Guide and Porter: Highly experienced and knowledgeable guide with personalized attention and dedicated porter service.<br>
+                </p>
+                <h2>2999$</h2>
+                <p> * Permits and Fees: VIP processing for permits and fees, including exclusive access to certain areas.<br>
+                    * Transportation: Luxury transportation options, such as private vehicles or chartered flights.<br>
+                    * Gear Rental: Comprehensive gear rental service with top-of-the-line equipment included.<br>
+                    * Additional Activities: Exclusive guided tours, cultural experiences, or adventure activities.<br>
+                    * Wellness Services: Spa treatments, yoga sessions, or other wellness activities for relaxation and rejuvenation after trekking.<br> 
+                    * Souvenirs and Gifts: Complimentary souvenirs or gifts as part of the package.</p>
+                <button class="panel-button">Purchase</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
