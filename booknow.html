@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="booknow.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>Registration Form</header>
+        <form action="connect.php" method="post" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type ="text" placeholder="Enter full name" required pattern="[A-Za-z\s]+" title="Please enter only alphabets for full name" id="fullName" name="fullName"/>
+            </div>
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type ="text" placeholder="Enter email address" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                 title="Please enter a valid email address with '.com'" id="email" name="email"/>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label> Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number" required pattern="[0-9]{10,}" title="Please enter a valid 10-digit phone number" id="phoneNum" name="phoneNum"/>
+
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type ="date" placeholder="Enter birth date" required id="birthDate" name="birthDate"/>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked value="m" />
+                        <label for="check-male"> Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" checked  value="f"/>
+                        <label for="check-female"> Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" checked value="o" />
+                        <label for="check-other"> Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box address">
+                <label>Address</label>
+                <input type ="text" placeholder="Enter street address" required id="address1" name="address1" />
+                <input type ="text" placeholder="Enter street address line 2 (optional)" id="address2" name="address2"/>
+
+                <div class="column">
+                    <div class="select-box">
+                        <select name="country" id="countries">
+                            <option hidden>Country</option>
+                        </select>
+                    </div>
+                    <input type ="text" placeholder="Enter your city" required id="city" name="city"/>
+                </div>
+
+                <div class="column">
+                    <input type ="text" placeholder="Enter your region" required id="region" name="region"/>
+                    <input type ="number" placeholder="Enter postal code" required pattern="[0-9]{5}" id="postalCode" name="postalCode"/>
+            
+                </div>
+                <div class="column">
+                    
+                    <div class="select-box">
+                        <select name="Trek" id="Trek" name="Trek">
+                            <option hidden>Trek</option>
+                            <option>Everest Base Camp Trek</option>
+                            <option>Annapurna Circuit Trek</option>
+                            <option>Langtang Valley Trek</option>
+                            <option>Makalu Base Camp Trek</option>
+                            <option>Rara lake Trek</option>
+                            <option>Dolpo Trek</option>
+                            <option>Manasalu Trek</option>
+                            <option>Mardi Himal Trek</option>
+                            <option>kanchanjunga Trek</option>
+                            <option>Pikey Peak Trek</option>
+                            
+                        </select>
+                    </div>
+
+
+                    <div class="select-box">
+                        <select name="package" id="package" name="package">
+                            <option hidden>Package</option>
+                            <option>Basic</option>
+                            <option>Advanced</option>
+                            <option>Premium</option>
+                            
+                            
+                        </select>
+                    </div>
+            
+                </div>
+                <div class="input-box extra-facilities">
+                    <label>Extra facilities (optional)</label>
+                    <input type="text" placeholder="Enter extra facilities you want to add in your package"  id="extraFacilities" name="extraFacilities"/>
+                </div>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="booknow.js"></script>
+</body>
+</html>
